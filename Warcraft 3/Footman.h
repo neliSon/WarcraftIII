@@ -11,6 +11,7 @@
 
 @interface Footman : Unit
 
-
+- (void)damage:(int)damage;
+- (void)attack:(Unit *)enemy withDamage:(int)damage;
 
 @end

@@ -20,8 +20,5 @@
     return self;
 }
 
-//- (void)setHealthPoints:(int) hp {
-//    _healthPoints = hp;
-//}
 
 @end

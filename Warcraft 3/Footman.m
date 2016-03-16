@@ -14,10 +14,18 @@
 {
     self = [super init];
     if (self) {
-        self.healthPoints = 80;
+        self.healthPoints = 60;
         self.attackPower = 10;
     }
     return self;
+}
+
+- (void)damage:(int)damage {
+    self.healthPoints -= damage;
+}
+
+- (void)attack:(Unit *)enemy withDamage:(int)damage {
+    enemy.healthPoints -= damage;
 }
 
 @end

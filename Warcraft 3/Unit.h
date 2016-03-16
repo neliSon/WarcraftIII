@@ -12,7 +12,4 @@
 
 @property (nonatomic) int healthPoints, attackPower;
 
-//- (void)setHealthPoints:(int) hp;
-
-
 @end
