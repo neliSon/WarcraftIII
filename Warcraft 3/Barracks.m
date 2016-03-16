@@ -8,6 +8,7 @@
 
 #import "Barracks.h"
 
+
 @implementation Barracks
 
 - (instancetype)init
@@ -16,5 +17,26 @@
     _food = 80;
     return self;
 }
+
+- (BOOL)canTrainFootman {
+    if (self.gold < 135 || self.food < 2) {
+        return NO;
+    }else{
+        return YES;
+    }
+}
+
+- (Footman *) trainFootman {
+    if (self.canTrainFootman) {
+        self.gold -= 135;
+        self.food -= 2;
+        return [Footman new];
+    }else{
+        return nil;
+    }
+}
+
+
+
 
 @end
