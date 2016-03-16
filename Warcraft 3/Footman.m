@@ -10,9 +10,13 @@
 
 @implementation Footman
 
--(instancetype)init{
-    _healthPoints = 60;
-    _attackPower = 10;
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        self.healthPoints = 80;
+        self.attackPower = 10;
+    }
     return self;
 }
 
